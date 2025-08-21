@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cattle Farming Guide - Farm Savvy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/livestock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .livestock-detail {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .livestock-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .livestock-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .livestock-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .livestock-info {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .livestock-info h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .quick-facts {
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .quick-facts h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .fact-item {
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+        
+        .fact-label {
+            font-weight: bold;
+            min-width: 150px;
+        }
+        
+        .guide-section {
+            margin-bottom: 3rem;
+        }
+        
+        .guide-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .guide-section h3 {
+            margin: 1.5rem 0 1rem;
+            color: #444;
+        }
+        
+        .guide-section p, .guide-section ul {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .guide-section ul {
+            padding-left: 1.5rem;
+        }
+        
+        .guide-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .guide-section table, .guide-section th, .guide-section td {
+            border: 1px solid #ddd;
+        }
+        
+        .guide-section th {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        
+        .guide-section td {
+            padding: 0.8rem;
+        }
+        
+        .guide-section tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .breeds {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .breed-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .breed-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .breed-card p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Farm Savvy</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../crops/">Crop Guides</a></li>
+                <li><a href="index.html" class="active">Livestock</a></li>
+                <li><a href="../forum/">Community</a></li>
+                <li><a href="../auth/login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="livestock-detail">
+            <div class="livestock-header">
+                <div class="livestock-image">
+                    <img src="../images/diarycattle.jpg" alt="Dairy Cattle">
+                </div>
+                <div class="livestock-info">
+                    <h1>Cattle Farming</h1>
+                    <p>Cattle are among the most important domesticated animals, providing milk, meat, leather, and draft power. Proper cattle management can lead to increased productivity and profitability.</p>
+                    
+                    <div class="quick-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-item">
+                            <span class="fact-label">Scientific Name:</span>
+                            <span>Bos taurus</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Gestation Period:</span>
+                            <span>9 months (283 days)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Lifespan:</span>
+                            <span>18-22 years (dairy), 10-12 years (beef)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Milk Production:</span>
+                            <span>6,000-12,000 kg/year (dairy breeds)</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Market Weight:</span>
+                            <span>500-700 kg (beef cattle at 18-24 months)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>Cattle Farming Guide</h2>
+                
+                <h3>Types of Cattle Farming</h3>
+                <p>There are two main types of cattle farming systems:</p>
+                <ul>
+                    <li><strong>Dairy Farming:</strong> Focused on milk production. Requires specialized breeds like Holstein, Jersey, or Brown Swiss.</li>
+                    <li><strong>Beef Farming:</strong> Focused on meat production. Common breeds include Angus, Hereford, and Charolais.</li>
+                </ul>
+                
+                <h3>Housing Requirements</h3>
+                <p>Proper housing is essential for cattle health and productivity:</p>
+                <ul>
+                    <li><strong>Space:</strong> 30-40 sq ft per adult animal in covered area</li>
+                    <li><strong>Ventilation:</strong> Good air circulation to prevent respiratory diseases</li>
+                    <li><strong>Flooring:</strong> Non-slip, well-drained surfaces</li>
+                    <li><strong>Feeding area:</strong> Separate space for feeding with adequate trough space</li>
+                    <li><strong>Milking parlor:</strong> For dairy farms - clean, organized milking area</li>
+                </ul>
+                
+                <h3>Common Breeds</h3>
+                <div class="breeds">
+                    <div class="breed-card">
+                        <h4>Holstein-Friesian</h4>
+                        <p><strong>Type:</strong> Dairy<br>
+                        <strong>Characteristics:</strong> High milk yield (6,000-12,000 kg/year), black and white coloration<br>
+                        <strong>Origin:</strong> Netherlands</p>
+                    </div>
+                    <div class="breed-card">
+                        <h4>Jersey</h4>
+                        <p><strong>Type:</strong> Dairy<br>
+                        <strong>Characteristics:</strong> High butterfat content (4.9%), light brown color, docile temperament<br>
+                        <strong>Origin:</strong> Jersey Island</p>
+                    </div>
+                    <div class="breed-card">
+                        <h4>Angus</h4>
+                        <p><strong>Type:</strong> Beef<br>
+                        <strong>Characteristics:</strong> Excellent meat quality, naturally polled (no horns), black or red color<br>
+                        <strong>Origin:</strong> Scotland</p>
+                    </div>
+                </div>
+                
+                <h3>Nutrition Requirements</h3>
+                <p>Cattle require a balanced diet for optimal health and production:</p>
+                <table>
+                    <tr>
+                        <th>Animal Type</th>
+                        <th>Dry Matter Intake</th>
+                        <th>Protein Requirement</th>
+                        <th>Energy Requirement</th>
+                    </tr>
+                    <tr>
+                        <td>Dairy Cow (producing)</td>
+                        <td>3-4% of body weight</td>
+                        <td>16-18% of diet</td>
+                        <td>High (6.5-7.5 Mcal/kg)</td>
+                    </tr>
+                    <tr>
+                        <td>Beef Cattle (growing)</td>
+                        <td>2.5-3% of body weight</td>
+                        <td>12-14% of diet</td>
+                        <td>Moderate (5.5-6.5 Mcal/kg)</td>
+                    </tr>
+                    <tr>
+                        <td>Pregnant Cow</td>
+                        <td>2-2.5% of body weight</td>
+                        <td>10-12% of diet</td>
+                        <td>Moderate (5.0-6.0 Mcal/kg)</td>
+                    </tr>
+                </table>
+                <p>Feed should consist of good quality forage (hay, silage) supplemented with concentrates (grains, protein meals) as needed.</p>
+                
+                <h3>Health Management</h3>
+                <p>Common cattle diseases and prevention:</p>
+                <table>
+                    <tr>
+                        <th>Disease</th>
+                        <th>Symptoms</th>
+                        <th>Prevention/Treatment</th>
+                    </tr>
+                    <tr>
+                        <td>Mastitis</td>
+                        <td>Inflamed udder, abnormal milk</td>
+                        <td>Clean milking practices, antibiotics</td>
+                    </tr>
+                    <tr>
+                        <td>Foot Rot</td>
+                        <td>Lameness, swollen foot</td>
+                        <td>Clean dry environment, foot baths</td>
+                    </tr>
+                    <tr>
+                        <td>Bovine Respiratory Disease</td>
+                        <td>Coughing, nasal discharge, fever</td>
+                        <td>Vaccination, good ventilation</td>
+                    </tr>
+                </table>
+                
+                <h3>Breeding Management</h3>
+                <p>Key aspects of cattle reproduction:</p>
+                <ul>
+                    <li><strong>Puberty:</strong> 6-12 months (heifers), 9-15 months (bulls)</li>
+                    <li><strong>Estrous cycle:</strong> 21 days (heat lasts 12-18 hours)</li>
+                    <li><strong>Breeding methods:</strong> Natural mating or artificial insemination</li>
+                    <li><strong>Pregnancy diagnosis:</strong> Rectal palpation (35+ days) or ultrasound (28+ days)</li>
+                </ul>
+                
+                <h3>Milk Production (Dairy)</h3>
+                <p>Factors affecting milk yield:</p>
+                <ul>
+                    <li><strong>Breed:</strong> Specialized dairy breeds produce more milk</li>
+                    <li><strong>Nutrition:</strong> Balanced diet with adequate energy and protein</li>
+                    <li><strong>Milking frequency:</strong> 2-3 times daily increases yield</li>
+                    <li><strong>Lactation stage:</strong> Peak production at 6-8 weeks postpartum</li>
+                    <li><strong>Environment:</strong> Comfortable conditions reduce stress</li>
+                </ul>
+                
+                <h3>Beef Production</h3>
+                <p>Beef production systems:</p>
+                <ul>
+                    <li><strong>Cow-calf:</strong> Breeding herd producing calves for sale</li>
+                    <li><strong>Stocker:</strong> Growing calves on pasture</li>
+                    <li><strong>Feedlot:</strong> Intensive finishing on high-energy diets</li>
+                </ul>
+                <p>Average daily gain targets:</p>
+                <ul>
+                    <li>Pasture: 0.7-1.0 kg/day</li>
+                    <li>Feedlot: 1.2-1.8 kg/day</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Farm Savvy</h3>
+                <p>Empowering farmers with knowledge for sustainable agriculture.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../crops/">Crop Guides</a></li>
+                    <li><a href="index.html">Livestock</a></li>
+                    <li><a href="../forum/">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@farmsavvy.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Farm Savvy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
