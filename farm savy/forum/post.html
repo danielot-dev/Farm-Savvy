@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best wheat varieties for clay soil? - Farm Savvy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .forum-post {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .post-header {
+            margin-bottom: 2rem;
+        }
+        
+        .post-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .post-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .post-author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .post-author-name {
+            font-weight: bold;
+        }
+        
+        .post-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .post-category {
+            display: inline-block;
+            background: var(--light-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .post-content {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            line-height: 1.7;
+        }
+        
+        .post-actions {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .post-action-btn {
+            background: var(--light-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .post-action-btn:hover {
+            background: #e0e0e0;
+        }
+        
+        .replies-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .reply-form {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .reply-form h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            min-height: 150px;
+        }
+        
+        .submit-reply {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-reply:hover {
+            background: #3e8e41;
+        }
+        
+        .replies-list {
+            margin-bottom: 3rem;
+        }
+        
+        .reply {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .reply-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .reply-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .reply-author {
+            font-weight: bold;
+        }
+        
+        .reply-date {
+            color: #666;
+            font-size: 0.8rem;
+        }
+        
+        .reply-content {
+            line-height: 1.7;
+            color: #333;
+        }
+        
+        .reply-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .reply-action-btn {
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .reply-action-btn:hover {
+            color: var(--primary-color);
+        }
+        
+        .expert-badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Farm Savvy</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../crops/">Crop Guides</a></li>
+                <li><a href="../livestock/">Livestock</a></li>
+                <li><a href="index.html" class="active">Community</a></li>
+                <li><a href="../auth/login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="forum-post">
+            <div class="post-header">
+                <h1>Best wheat varieties for clay soil?</h1>
+                <div class="post-meta">
+                    <div class="post-author">
+                        <img src="../images/user1.jpg" alt="Rajesh Kumar" class="post-author-avatar">
+                        <div>
+                            <div class="post-author-name">Rajesh Kumar</div>
+                            <div class="post-date">Posted 2 hours ago</div>
+                        </div>
+                    </div>
+                    <span class="post-category">Crop Production</span>
+                </div>
+            </div>
+            
+            <div class="post-content">
+                <p>Hello everyone,</p>
+                <p>I have about 5 acres of clay soil in Punjab (India) and I'm planning to grow wheat this coming season. The soil retains moisture well but can be slow to drain and gets compacted easily.</p>
+                <p>I'm looking for recommendations on wheat varieties that perform well in these conditions. Specifically:</p>
+                <ul>
+                    <li>Varieties with good root systems that can handle heavier soils</li>
+                    <li>Disease-resistant varieties (we've had issues with rust in the past)</li>
+                    <li>Good yield potential (targeting at least 4 tons/hectare)</li>
+                </ul>
+                <p>I've grown PBW 550 in the past with moderate success, but I'm wondering if there are better options. Any advice from farmers with similar soil conditions would be greatly appreciated!</p>
+                <p>Thanks in advance,<br>Rajesh</p>
+            </div>
+            
+            <div class="post-actions">
+                <button class="post-action-btn">
+                    <i class="fas fa-thumbs-up"></i> Like (12)
+                </button>
+                <button class="post-action-btn">
+                    <i class="fas fa-bookmark"></i> Save
+                </button>
+                <button class="post-action-btn">
+                    <i class="fas fa-share"></i> Share
+                </button>
+            </div>
+            
+            <div class="replies-section">
+                <h2>Replies (7)</h2>
+                
+                <div class="reply-form">
+                    <h3>Post Your Reply</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="reply-content">Your Answer</label>
+                            <textarea id="reply-content" placeholder="Share your knowledge or ask for clarification..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-reply">Post Reply</button>
+                    </form>
+                </div>
+                
+                <div class="replies-list">
+                    <div class="reply">
+                        <div class="reply-header">
+                            <img src="../images/user5.jpg" alt="Harpreet Singh" class="reply-avatar">
+                            <div>
+                                <div class="reply-author">Harpreet Singh <span class="expert-badge">Expert</span></div>
+                                <div class="reply-date">1 hour ago</div>
+                            </div>
+                        </div>
+                        <div class="reply-content">
+                            <p>Rajesh, I've farmed clay soils in Punjab for 15 years. For your conditions, I recommend:</p>
+                            <ol>
+                                <li><strong>HD 2967:</strong> Excellent for heavy soils, good rust resistance, yields 4.5-5 t/ha with proper management</li>
+                                <li><strong>WH 1105:</strong> Performs well in clay, tolerant to waterlogging, consistent 4-4.5 t/ha</li>
+                                <li><strong>PBW 725:</strong> Newer variety with good disease package, needs slightly better drainage</li>
+                            </ol>
+                            <p>Key tips for clay soils:</p>
+                            <ul>
+                                <li>Deep plowing (25-30 cm) before planting to improve root penetration</li>
+                                <li>Add organic matter (5-10 tons/acre of farmyard manure) to improve structure</li>
+                                <li>Consider raised beds if drainage is very poor</li>
+                            </ul>
+                        </div>
+                        <div class="reply-actions">
+                            <button class="reply-action-btn">
+                                <i class="fas fa-thumbs-up"></i> Helpful (8)
+                            </button>
+                            <button class="reply-action-btn">
+                                <i class="fas fa-reply"></i> Reply
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="reply">
+                        <div class="reply-header">
+                            <img src="../images/user6.jpg" alt="Amit Patel" class="reply-avatar">
+                            <div>
+                                <div class="reply-author">Amit Patel</div>
+                                <div class="reply-date">45 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="reply-content">
+                            <p>I second HD 2967 for clay soils. We've been growing it for 3 years now on our farm near Ludhiana with similar soil conditions. Consistently getting 4.2-4.8 t/ha with proper irrigation and fertilizer.</p>
+                            <p>One thing to watch for - it's somewhat susceptible to Karnal bunt if you have history of that in your area.</p>
+                        </div>
+                        <div class="reply-actions">
+                            <button class="reply-action-btn">
+                                <i class="fas fa-thumbs-up"></i> Helpful (3)
+                            </button>
+                            <button class="reply-action-btn">
+                                <i class="fas fa-reply"></i> Reply
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="reply">
+                        <div class="reply-header">
+                            <img src="../images/user7.jpg" alt="Dr. Priya Sharma" class="reply-avatar">
+                            <div>
+                                <div class="reply-author">Dr. Priya Sharma <span class="expert-badge">Agronomist</span></div>
+                                <div class="reply-date">30 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="reply-content">
+                            <p>From a research perspective, we've found these varieties perform well in clay soils in recent trials at PAU:</p>
+                            <table>
+                                <tr>
+                                    <th>Variety</th>
+                                    <th>Clay Soil Yield</th>
+                                    <th>Disease Resistance</th>
+                                </tr>
+                                <tr>
+                                    <td>PBW 752</td>
+                                    <td>4.6 t/ha</td>
+                                    <td>Good for rust, moderate for bunt</td>
+                                </tr>
+                                <tr>
+                                    <td>DBW 187</td>
+                                    <td>4.8 t/ha</td>
+                                    <td>Excellent all-around</td>
+                                </tr>
+                            </table>
+                            <p>Important to get your soil tested - clay soils in Punjab often need additional zinc supplementation.</p>
+                        </div>
+                        <div class="reply-actions">
+                            <button class="reply-action-btn">
+                                <i class="fas fa-thumbs-up"></i> Helpful (5)
+                            </button>
+                            <button class="reply-action-btn">
+                                <i class="fas fa-reply"></i> Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Farm Savvy</h3>
+                <p>Empowering farmers with knowledge for sustainable agriculture.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../crops/">Crop Guides</a></li>
+                    <li><a href="../livestock/">Livestock</a></li>
+                    <li><a href="index.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@farmsavvy.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Farm Savvy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/forum.js"></script>
+</body>
+</html>

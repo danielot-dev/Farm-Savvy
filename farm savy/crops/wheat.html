@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheat Cultivation Guide - Farm Savvy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/crops.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .crop-detail {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .crop-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .crop-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .crop-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .crop-info {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .crop-info h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .crop-info .scientific-name {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .quick-facts {
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .quick-facts h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .fact-item {
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+        
+        .fact-label {
+            font-weight: bold;
+            min-width: 120px;
+        }
+        
+        .guide-section {
+            margin-bottom: 3rem;
+        }
+        
+        .guide-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .guide-section h3 {
+            margin: 1.5rem 0 1rem;
+            color: #444;
+        }
+        
+        .guide-section p, .guide-section ul {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .guide-section ul {
+            padding-left: 1.5rem;
+        }
+        
+        .guide-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .guide-section table, .guide-section th, .guide-section td {
+            border: 1px solid #ddd;
+        }
+        
+        .guide-section th {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        
+        .guide-section td {
+            padding: 0.8rem;
+        }
+        
+        .guide-section tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .varieties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        
+        .variety-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .variety-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .variety-card p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-leaf"></i>
+            <span>Farm Savvy</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html" class="active">Crop Guides</a></li>
+                <li><a href="../livestock/">Livestock</a></li>
+                <li><a href="../forum/">Community</a></li>
+                <li><a href="../auth/login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="crop-detail">
+            <div class="crop-header">
+                <div class="crop-image">
+                    <img src="../images/wheat-detail.jpg" alt="Wheat Field">
+                </div>
+                <div class="crop-info">
+                    <h1>Wheat</h1>
+                    <p class="scientific-name">Triticum aestivum</p>
+                    <p>Wheat is one of the world's most important cereal crops, providing about 20% of the global population's food energy intake. It's versatile, nutritious, and can be grown in various climates.</p>
+                    
+                    <div class="quick-facts">
+                        <h3>Quick Facts</h3>
+                        <div class="fact-item">
+                            <span class="fact-label">Family:</span>
+                            <span>Poaceae</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Growth Period:</span>
+                            <span>3-8 months</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Optimal Temperature:</span>
+                            <span>15-20°C</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Soil pH:</span>
+                            <span>6.0-7.5</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Water Needs:</span>
+                            <span>Moderate (500-800mm)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-section">
+                <h2>Growing Guide</h2>
+                
+                <h3>Climate Requirements</h3>
+                <p>Wheat grows best in temperate regions with cool, moist weather during the growing season and warm, dry weather during harvest. It can tolerate temperatures as low as -20°C when properly hardened.</p>
+                
+                <h3>Soil Preparation</h3>
+                <p>Wheat prefers well-drained loamy soils with good organic matter content. Prepare the field by:</p>
+                <ul>
+                    <li>Plowing to a depth of 15-20 cm</li>
+                    <li>Harrowing to break up clods</li>
+                    <li>Leveling the field for uniform irrigation</li>
+                    <li>Adding compost or manure (2-3 tons per acre)</li>
+                </ul>
+                
+                <h3>Planting</h3>
+                <p>Optimal planting times vary by region and wheat type:</p>
+                <table>
+                    <tr>
+                        <th>Wheat Type</th>
+                        <th>Planting Season</th>
+                        <th>Seeding Rate (kg/ha)</th>
+                    </tr>
+                    <tr>
+                        <td>Winter Wheat</td>
+                        <td>Autumn (before first frost)</td>
+                        <td>100-150</td>
+                    </tr>
+                    <tr>
+                        <td>Spring Wheat</td>
+                        <td>Early Spring</td>
+                        <td>120-180</td>
+                    </tr>
+                </table>
+                <p>Plant seeds 2-5 cm deep in rows spaced 15-20 cm apart.</p>
+                
+                <h3>Irrigation</h3>
+                <p>Wheat requires about 500-800mm of water during its growing season. Critical irrigation stages:</p>
+                <ul>
+                    <li>Crown root initiation (20-25 days after planting)</li>
+                    <li>Flowering stage</li>
+                    <li>Grain filling stage</li>
+                </ul>
+                
+                <h3>Fertilization</h3>
+                <p>Recommended fertilizer application (per acre):</p>
+                <ul>
+                    <li>Nitrogen (N): 50-100 kg (split application)</li>
+                    <li>Phosphorus (P₂O₅): 30-60 kg (at planting)</li>
+                    <li>Potassium (K₂O): 20-40 kg (for deficient soils)</li>
+                </ul>
+                
+                <h3>Common Varieties</h3>
+                <div class="varieties">
+                    <div class="variety-card">
+                        <h4>Hard Red Winter</h4>
+                        <p>High protein content, excellent for bread flour. Grown in central and southern plains.</p>
+                    </div>
+                    <div class="variety-card">
+                        <h4>Soft Red Winter</h4>
+                        <p>Lower protein, used for cakes and pastries. Common in eastern states.</p>
+                    </div>
+                    <div class="variety-card">
+                        <h4>Durum</h4>
+                        <p>Very hard wheat used for pasta. Grown in northern plains.</p>
+                    </div>
+                </div>
+                
+                <h3>Pest and Disease Management</h3>
+                <p>Common wheat problems and solutions:</p>
+                <table>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Symptoms</th>
+                        <th>Solution</th>
+                    </tr>
+                    <tr>
+                        <td>Rust</td>
+                        <td>Orange-brown pustules on leaves</td>
+                        <td>Resistant varieties, fungicides</td>
+                    </tr>
+                    <tr>
+                        <td>Aphids</td>
+                        <td>Curled leaves, sticky residue</td>
+                        <td>Natural predators, insecticidal soap</td>
+                    </tr>
+                    <tr>
+                        <td>Fusarium Head Blight</td>
+                        <td>Bleached spikelets</td>
+                        <td>Crop rotation, fungicides</td>
+                    </tr>
+                </table>
+                
+                <h3>Harvesting</h3>
+                <p>Wheat is ready for harvest when:</p>
+                <ul>
+                    <li>Kernels are hard and dry (moisture content 13-15%)</li>
+                    <li>Straw turns golden brown</li>
+                    <li>Kernels can't be dented with a thumbnail</li>
+                </ul>
+                <p>Use a combine harvester or traditional methods like sickles for small plots.</p>
+                
+                <h3>Yield Expectations</h3>
+                <p>Average yields vary by region and farming practices:</p>
+                <ul>
+                    <li>Rainfed: 1-3 tons per hectare</li>
+                    <li>Irrigated: 3-6 tons per hectare</li>
+                    <li>High-input systems: 6-10 tons per hectare</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Farm Savvy</h3>
+                <p>Empowering farmers with knowledge for sustainable agriculture.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../crops/">Crop Guides</a></li>
+                    <li><a href="../livestock/">Livestock</a></li>
+                    <li><a href="../forum/">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>info@farmsavvy.com</p>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Farm Savvy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
